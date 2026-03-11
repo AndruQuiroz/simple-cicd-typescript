@@ -5,6 +5,9 @@
 declare global {
   interface Window {
     sum: (a: number, b: number) => number;
+    subtract: (a: number, b: number) => number;
+    multiply: (a: number, b: number) => number;
+    divide: (a: number, b: number) => number;
   }
 }
 
@@ -29,3 +32,39 @@ describe("sum", () => {
 });
 
 export {};
+
+declare global {
+  interface Window {
+    subtract: (a: number, b: number) => number;
+    multiply: (a: number, b: number) => number;
+    divide: (a: number, b: number) => number;
+  }
+}
+
+describe("subtract", () => {
+  it("resta casos básicos con enteros positivos", () => {
+    expect(window.subtract(5, 3)).toBe(2);
+  });
+  it("resta casos con números negativos", () => {
+    expect(window.subtract(-5, -2)).toBe(-3);
+  });
+});
+
+describe("multiply", () => {
+  it("multiplica casos básicos", () => {
+    expect(window.multiply(3, 4)).toBe(12);
+  });
+  it("multiplica casos con cero", () => {
+    expect(window.multiply(5, 0)).toBe(0);
+  });
+});
+
+describe("divide", () => {
+  it("divide casos básicos con enteros positivos", () => {
+    expect(window.divide(10, 2)).toBe(5);
+  });
+  it("maneja caso límite de división por cero", () => {
+    expect(() => window.divide(10, 0)).toThrow("División por cero no permitida");
+  });
+});
+//
