@@ -6,7 +6,7 @@ El objetivo final es construir una **calculadora de números enteros**.
 Actualmente el repositorio solo implementa la operación de **suma**, que sirve como base para practicar correcciones, pruebas y validación del pipeline.
 
 
-# Disparando
+# Disparando!
 ---
 
 ## 📌 Descripción del proyecto
