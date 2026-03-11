@@ -5,6 +5,8 @@ Este proyecto es una introducción práctica al desarrollo con **TypeScript**, p
 El objetivo final es construir una **calculadora de números enteros**.  
 Actualmente el repositorio solo implementa la operación de **suma**, que sirve como base para practicar correcciones, pruebas y validación del pipeline.
 
+
+# Disparando
 ---
 
 ## 📌 Descripción del proyecto
